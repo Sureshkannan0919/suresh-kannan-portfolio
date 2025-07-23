@@ -2,6 +2,7 @@ import { PORTFOLIO_DATA } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Header() {
   const sections = ["about", "experience", "projects", "skills", "contact"];
@@ -26,6 +27,7 @@ export function Header() {
               </Button>
             ))}
           </nav>
+          <ThemeToggle />
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
