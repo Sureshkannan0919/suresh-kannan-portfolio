@@ -1,5 +1,7 @@
 import { PORTFOLIO_DATA } from "@/lib/data";
 import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
 
 export function Header() {
   const sections = ["about", "experience", "projects", "skills", "contact"];
@@ -24,6 +26,29 @@ export function Header() {
               </Button>
             ))}
           </nav>
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="md:hidden">
+                <Menu />
+                <span className="sr-only">Toggle Menu</span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right">
+              <div className="flex flex-col pt-6">
+                <nav className="flex flex-col gap-4">
+                  {sections.map((section) => (
+                    <a
+                      key={section}
+                      href={`#${section}`}
+                      className="capitalize text-lg font-medium text-foreground/80 hover:text-foreground transition-colors"
+                    >
+                      {section}
+                    </a>
+                  ))}
+                </nav>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </header>
