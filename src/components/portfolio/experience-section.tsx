@@ -6,10 +6,8 @@ export function ExperienceSection() {
   return (
     <SectionWrapper id="experience" className="bg-muted/50">
       <SectionHeader>Work Experience</SectionHeader>
-      <div className="relative flex flex-col gap-12">
-        {/* Timeline line */}
-        <div className="absolute left-6 top-6 bottom-6 w-0.5 bg-border" />
-        {EXPERIENCE_DATA.map((exp, index) => (
+      <div className="grid gap-8 md:grid-cols-2">
+        {EXPERIENCE_DATA.map((exp) => (
           <ExperienceCard key={exp.id} experience={exp} />
         ))}
       </div>
