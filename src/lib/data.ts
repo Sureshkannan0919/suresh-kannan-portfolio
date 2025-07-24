@@ -67,19 +67,38 @@ export const PROJECTS_DATA = [
 ];
 
 export const SKILLS_DATA = [
-    { name: "JavaScript", color: "#f0db4f" },
-    { name: "TypeScript", color: "#007acc" },
-    { name: "React", color: "#61DBFB" },
-    { name: "Next.js", color: "#000000" },
-    { name: "Node.js / Express", color: "#3C873A" },
-    { name: "Python / Django", color: "#306998" },
-    { name: "SQL (PostgreSQL, MySQL)", color: "#336791" },
-    { name: "NoSQL (MongoDB, Redis)", color: "#4DB33D" },
-    { name: "AWS / GCP", color: "#FF9900" },
-    { name: "Docker / Kubernetes", color: "#0db7ed" },
-    { name: "HTML5 & CSS3", color: "#e34f26" },
-    { name: "Tailwind CSS", color: "#38bdf8" },
-    { name: "CI/CD (Jenkins, GitHub Actions)", color: "#1A1A1A" },
+    {
+      title: "Programming Languages",
+      skills: [
+        { name: "JavaScript", color: "#f0db4f" },
+        { name: "TypeScript", color: "#007acc" },
+        { name: "Python", color: "#306998" },
+        { name: "SQL (PostgreSQL, MySQL)", color: "#336791" },
+        { name: "HTML5 & CSS3", color: "#e34f26" },
+      ],
+    },
+    {
+      title: "Frameworks & Libraries",
+      skills: [
+        { name: "React", color: "#61DBFB" },
+        { name: "Next.js", color: "#000000" },
+        { name: "Node.js / Express", color: "#3C873A" },
+        { name: "Tailwind CSS", color: "#38bdf8" },
+        { name: "Django", color: "#092E20" },
+      ],
+    },
+    {
+      title: "Tools & Technologies",
+      skills: [
+        { name: "NoSQL (MongoDB, Redis)", color: "#4DB33D" },
+        { name: "Docker / Kubernetes", color: "#0db7ed" },
+        { name: "CI/CD (GitHub Actions)", color: "#1A1A1A" },
+      ],
+    },
+    {
+      title: "Platforms",
+      skills: [{ name: "AWS / GCP", color: "#FF9900" }],
+    },
 ];
 
 export const EDUCATION_DATA = [
@@ -98,5 +117,3 @@ export const EDUCATION_DATA = [
     description: "Validated cloud fluency and foundational AWS knowledge across the four key areas: cloud concepts, security and compliance, technology, and billing and pricing."
   }
 ];
-
-    
