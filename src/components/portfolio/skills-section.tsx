@@ -16,10 +16,8 @@ export function SkillsSection() {
               {category.title}
             </h3>
             <div
-              className="group relative w-full overflow-x-auto whitespace-nowrap"
+              className="group relative w-full overflow-hidden whitespace-nowrap"
               style={{ maskImage: 'linear-gradient(to right, transparent 0, black 128px, black calc(100% - 128px), transparent 100%)' }}
-              onMouseOver={(e) => e.currentTarget.querySelector('div')!.style.animationPlayState = 'paused'}
-              onMouseOut={(e) => e.currentTarget.querySelector('div')!.style.animationPlayState = 'running'}
             >
               <div className="animate-scroll group-hover:pause flex w-max items-center gap-8">
                 {[...category.skills, ...category.skills].map((skill, index) => (
