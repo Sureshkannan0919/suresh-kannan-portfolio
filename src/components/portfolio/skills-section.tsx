@@ -18,46 +18,27 @@ export function SkillsSection() {
             <div
               className="group relative w-full overflow-x-auto whitespace-nowrap"
               style={{ maskImage: 'linear-gradient(to right, transparent 0, black 128px, black calc(100% - 128px), transparent 100%)' }}
+              onMouseOver={(e) => e.currentTarget.querySelector('div')!.style.animationPlayState = 'paused'}
+              onMouseOut={(e) => e.currentTarget.querySelector('div')!.style.animationPlayState = 'running'}
             >
-              <div className="animate-scroll group-hover:pause flex w-max items-center gap-8">
+              <div className="animate-scroll group-hover:pause flex w-max items-start gap-8">
                 {category.skills.map((skill) => (
-                  <div key={skill.name} className="inline-flex flex-col items-center text-center">
+                  <div key={skill.name} className="inline-flex flex-col items-center gap-2 text-center">
                     <Card 
-                      className="group/card relative flex h-24 w-24 items-center justify-center overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
+                      className="group/card relative flex h-24 w-24 items-center justify-center overflow-hidden p-4 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
                     >
                       {skill.imageUrl ? (
                         <Image
                           src={skill.imageUrl}
                           alt={`${skill.name} logo`}
-                          width={48}
-                          height={48}
+                          fill
                           className="object-contain"
                         />
                       ) : (
                         <div className="h-12 w-12" />
                       )}
                     </Card>
-                    <h3 className="mt-2 text-sm font-semibold text-foreground">{skill.name}</h3>
-                  </div>
-                ))}
-                 {category.skills.map((skill) => (
-                  <div key={`${skill.name}-clone`} className="inline-flex flex-col items-center text-center" aria-hidden="true">
-                    <Card 
-                      className="group/card relative flex h-24 w-24 items-center justify-center overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-                    >
-                      {skill.imageUrl ? (
-                        <Image
-                          src={skill.imageUrl}
-                          alt={`${skill.name} logo`}
-                          width={48}
-                          height={48}
-                          className="object-contain"
-                        />
-                      ) : (
-                        <div className="h-12 w-12" />
-                      )}
-                    </Card>
-                    <h3 className="mt-2 text-sm font-semibold text-foreground">{skill.name}</h3>
+                    <h3 className="w-24 text-sm font-semibold text-foreground">{skill.name}</h3>
                   </div>
                 ))}
               </div>
