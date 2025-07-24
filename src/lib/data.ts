@@ -1,3 +1,4 @@
+
 export const PORTFOLIO_DATA = {
   name: "Alex Doe",
   title: "Senior Software Engineer",
@@ -67,45 +68,47 @@ export const PROJECTS_DATA = [
 ];
 
 export const SKILLS_DATA = [
-    {
-      title: "Frameworks & Libraries",
-      skills: [
-        { name: "React", color: "#61DBFB" },
-        { name: "Next.js", color: "#000000" },
-        { name: "Node.js / Express", color: "#3C873A" },
-        { name: "Tailwind CSS", color: "#38bdf8" },
-        { name: "Django", color: "#092E20" },
-      ],
-    },
-    {
-      title: "Programming Languages",
-      skills: [
-        { name: "JavaScript", color: "#f0db4f" },
-        { name: "TypeScript", color: "#007acc" },
-        { name: "Python", color: "#306998" },
-        { name: "SQL (PostgreSQL, MySQL)", color: "#336791" },
-        { name: "HTML5 & CSS3", color: "#e34f26" },
-      ],
-    },
-    {
-      title: "AI & Data Science",
-      skills: [
-        { name: "AI", color: "#5E4AE3" },
-        { name: "Data Science", color: "#F05032" },
-        { name: "NLP", color: "#4A90E2" },
-        { name: "Machine Learning", color: "#FF6F61" },
-        { name: "Deep Learning", color: "#6A0DAD" },
-      ],
-    },
-    {
-      title: "Tools & Platforms",
-      skills: [
-        { name: "NoSQL (MongoDB, Redis)", color: "#4DB33D" },
-        { name: "Docker / Kubernetes", color: "#0db7ed" },
-        { name: "CI/CD (GitHub Actions)", color: "#1A1A1A" },
-        { name: "AWS / GCP", color: "#FF9900" },
-      ],
-    },
+  {
+    title: "Technologies",
+    skills: [
+      { name: "AI", color: "#5E4AE3" },
+      { name: "Data Science", color: "#F05032" },
+      { name: "NLP", color: "#4A90E2" },
+      { name: "Machine Learning", color: "#FF6F61" },
+      { name: "Deep Learning", color: "#6A0DAD" },
+      { name: "Data Visualization", color: "#F4D03F" },
+      { name: "Backend Development", color: "#2ECC71" },
+    ],
+  },
+  {
+    title: "Programming Languages",
+    skills: [
+      { name: "JavaScript", color: "#f0db4f" },
+      { name: "TypeScript", color: "#007acc" },
+      { name: "Python", color: "#306998" },
+      { name: "SQL", color: "#336791" },
+      { name: "HTML5 & CSS3", color: "#e34f26" },
+    ],
+  },
+  {
+    title: "Frameworks & Libraries",
+    skills: [
+      { name: "React", color: "#61DBFB" },
+      { name: "Next.js", color: "#000000" },
+      { name: "Node.js / Express", color: "#3C873A" },
+      { name: "Tailwind CSS", color: "#38bdf8" },
+      { name: "Django", color: "#092E20" },
+    ],
+  },
+  {
+    title: "Tools & Platforms",
+    skills: [
+      { name: "MongoDB", color: "#4DB33D" },
+      { name: "Docker / Kubernetes", color: "#0db7ed" },
+      { name: "CI/CD (GitHub Actions)", color: "#1A1A1A" },
+      { name: "AWS / GCP", color: "#FF9900" },
+    ],
+  },
 ];
 
 export const EDUCATION_DATA = [
