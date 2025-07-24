@@ -10,7 +10,7 @@ export function AboutSection() {
       <div className="flex flex-col items-center gap-12 md:flex-row md:gap-16">
         <div className="relative h-48 w-48 flex-shrink-0 md:h-64 md:w-64">
           <Image
-            src="https://placehold.co/400x400"
+            src="https://placehold.co/400x400.png"
             alt={PORTFOLIO_DATA.name}
             data-ai-hint="professional headshot"
             width={400}
