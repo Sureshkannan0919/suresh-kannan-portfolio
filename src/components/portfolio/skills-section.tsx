@@ -21,9 +21,9 @@ export function SkillsSection() {
               onMouseOver={(e) => e.currentTarget.querySelector('div')!.style.animationPlayState = 'paused'}
               onMouseOut={(e) => e.currentTarget.querySelector('div')!.style.animationPlayState = 'running'}
             >
-              <div className="animate-scroll group-hover:pause flex w-max items-start gap-8">
-                {category.skills.map((skill) => (
-                  <div key={skill.name} className="inline-flex flex-col items-center gap-2 text-center">
+              <div className="animate-scroll group-hover:pause flex w-max items-center gap-8">
+                {[...category.skills, ...category.skills].map((skill, index) => (
+                  <div key={`${skill.name}-${index}`} className="inline-flex flex-col items-center gap-2 text-center my-4">
                     <Card 
                       className="group/card relative flex h-24 w-24 items-center justify-center overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
                     >
