@@ -68,8 +68,8 @@ export const PROJECTS_DATA = [
 
 export const SKILLS_DATA = [
     { name: "JavaScript", icon: "FileJson", color: "#F7DF1E" },
-    { name: "TypeScript", icon: "FileJson", color: "#3178C6" },
-    { name: "React / Next.js", icon: "React", color: "#61DAFB" },
+    { name: "TypeScript", icon: "FileJson2", color: "#3178C6" },
+    { name: "React / Next.js", icon: "NextJs", color: "#000000" },
     { name: "Node.js / Express", icon: "Server", color: "#68A063" },
     { name: "Python / Django", icon: "FileCode", color: "#3776AB" },
     { name: "SQL (PostgreSQL, MySQL)", icon: "Database", color: "#4479A1" },
@@ -77,7 +77,7 @@ export const SKILLS_DATA = [
     { name: "AWS / GCP", icon: "Cloud", color: "#FF9900" },
     { name: "Docker / Kubernetes", icon: "Container", color: "#2496ED" },
     { name: "HTML5 & CSS3", icon: "FileCode2", color: "#E34F26" },
-    { name: "Tailwind CSS", icon: "Wind", color: "#06B6D4" },
+    { name: "Tailwind CSS", icon: "TailwindCss", color: "#000000" },
     { name: "CI/CD (Jenkins, GitHub Actions)", icon: "GitBranchPlus", color: "#1A1A1A" },
 ];
 
