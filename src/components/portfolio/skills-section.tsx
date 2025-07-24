@@ -22,9 +22,9 @@ export function SkillsSection() {
                 {category.skills.map((skill) => (
                   <div key={skill.name} className="inline-flex flex-col items-center mx-4">
                     <Card 
-                      className="group/card relative h-24 w-24 transform overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-                      style={{ backgroundColor: skill.color }}
+                      className="group/card relative flex h-24 w-24 items-center justify-center overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
                     >
+                      {/* You can add your Image component here */}
                     </Card>
                     <h3 className="mt-2 text-sm font-semibold text-foreground">{skill.name}</h3>
                   </div>
@@ -34,9 +34,9 @@ export function SkillsSection() {
                  {category.skills.map((skill) => (
                   <div key={skill.name} className="inline-flex flex-col items-center mx-4">
                     <Card 
-                      className="group/card relative h-24 w-24 transform overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-                      style={{ backgroundColor: skill.color }}
+                      className="group/card relative flex h-24 w-24 items-center justify-center overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
                     >
+                      {/* You can add your Image component here */}
                     </Card>
                     <h3 className="mt-2 text-sm font-semibold text-foreground">{skill.name}</h3>
                   </div>
