@@ -21,7 +21,7 @@ export function SkillsSection() {
                 {category.skills.map((skill) => (
                   <Card 
                     key={skill.name} 
-                    className="group/card relative mx-4 inline-flex h-24 w-48 transform flex-col justify-end overflow-hidden text-white transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
+                    className="group/card relative mx-4 inline-flex h-24 w-24 transform flex-col justify-end overflow-hidden text-white transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
                     style={{ backgroundColor: skill.color }}
                   >
                     <div className="absolute inset-0 flex items-center justify-center p-4 transition-transform duration-300 group-hover/card:scale-110">
@@ -37,7 +37,7 @@ export function SkillsSection() {
                  {category.skills.map((skill) => (
                   <Card 
                     key={skill.name} 
-                    className="group/card relative mx-4 inline-flex h-24 w-48 transform flex-col justify-end overflow-hidden text-white transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
+                    className="group/card relative mx-4 inline-flex h-24 w-24 transform flex-col justify-end overflow-hidden text-white transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
                     style={{ backgroundColor: skill.color }}
                   >
                     <div className="absolute inset-0 flex items-center justify-center p-4 transition-transform duration-300 group-hover/card:scale-110">
