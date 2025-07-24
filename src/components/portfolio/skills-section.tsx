@@ -25,14 +25,14 @@ export function SkillsSection() {
                 {category.skills.map((skill) => (
                   <div key={skill.name} className="inline-flex flex-col items-center gap-2 text-center">
                     <Card 
-                      className="group/card relative flex h-24 w-24 items-center justify-center overflow-hidden p-4 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
+                      className="group/card relative flex h-24 w-24 items-center justify-center overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
                     >
                       {skill.imageUrl ? (
                         <Image
                           src={skill.imageUrl}
                           alt={`${skill.name} logo`}
                           fill
-                          className="object-contain"
+                          className="object-cover"
                         />
                       ) : (
                         <div className="h-12 w-12" />
