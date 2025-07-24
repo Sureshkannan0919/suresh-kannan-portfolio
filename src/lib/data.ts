@@ -67,18 +67,18 @@ export const PROJECTS_DATA = [
 ];
 
 export const SKILLS_DATA = [
-    { name: "JavaScript", level: 95, icon: "FileJson" },
-    { name: "TypeScript", level: 90, icon: "FileJson" },
-    { name: "React / Next.js", level: 95, icon: "React" },
-    { name: "Node.js / Express", level: 90, icon: "Server" },
-    { name: "Python / Django", level: 75, icon: "FileCode" },
-    { name: "SQL (PostgreSQL, MySQL)", level: 85, icon: "Database" },
-    { name: "NoSQL (MongoDB, Redis)", level: 80, icon: "DatabaseZap" },
-    { name: "AWS / GCP", level: 80, icon: "Cloud" },
-    { name: "Docker / Kubernetes", level: 75, icon: "Container" },
-    { name: "HTML5 & CSS3", level: 98, icon: "FileCode2" },
-    { name: "Tailwind CSS", level: 92, icon: "Wind" },
-    { name: "CI/CD (Jenkins, GitHub Actions)", level: 85, icon: "GitBranchPlus" },
+    { name: "JavaScript", icon: "FileJson", color: "#F7DF1E" },
+    { name: "TypeScript", icon: "FileJson", color: "#3178C6" },
+    { name: "React / Next.js", icon: "React", color: "#61DAFB" },
+    { name: "Node.js / Express", icon: "Server", color: "#68A063" },
+    { name: "Python / Django", icon: "FileCode", color: "#3776AB" },
+    { name: "SQL (PostgreSQL, MySQL)", icon: "Database", color: "#4479A1" },
+    { name: "NoSQL (MongoDB, Redis)", icon: "DatabaseZap", color: "#47A248" },
+    { name: "AWS / GCP", icon: "Cloud", color: "#FF9900" },
+    { name: "Docker / Kubernetes", icon: "Container", color: "#2496ED" },
+    { name: "HTML5 & CSS3", icon: "FileCode2", color: "#E34F26" },
+    { name: "Tailwind CSS", icon: "Wind", color: "#06B6D4" },
+    { name: "CI/CD (Jenkins, GitHub Actions)", icon: "GitBranchPlus", color: "#1A1A1A" },
 ];
 
 export const EDUCATION_DATA = [

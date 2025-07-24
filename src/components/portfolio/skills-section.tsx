@@ -20,8 +20,12 @@ export function SkillsSection() {
       <SectionHeader>Skills & Expertise</SectionHeader>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {SKILLS_DATA.map((skill) => (
-          <Card key={skill.name} className="flex transform flex-col items-center justify-center gap-4 p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
-            <Icon name={skill.icon} className="h-10 w-10 text-primary" />
+          <Card 
+            key={skill.name} 
+            className="flex transform flex-col items-center justify-center gap-4 p-6 text-white transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
+            style={{ backgroundColor: skill.color }}
+          >
+            <Icon name={skill.icon} className="h-10 w-10" />
             <h3 className="text-center font-semibold">{skill.name}</h3>
           </Card>
         ))}
