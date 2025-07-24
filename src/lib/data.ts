@@ -67,17 +67,17 @@ export const PROJECTS_DATA = [
 ];
 
 export const SKILLS_DATA = [
-    { name: "JavaScript", icon: "FileJson", color: "#F7DF1E" },
-    { name: "TypeScript", icon: "FileJson2", color: "#3178C6" },
-    { name: "React / Next.js", icon: "NextJs", color: "#000000" },
-    { name: "Node.js / Express", icon: "Server", color: "#68A063" },
-    { name: "Python / Django", icon: "Python", color: "#3776AB" },
-    { name: "SQL (PostgreSQL, MySQL)", icon: "Database", color: "#4479A1" },
-    { name: "NoSQL (MongoDB, Redis)", icon: "DatabaseZap", color: "#47A248" },
-    { name: "AWS / GCP", icon: "Cloud", color: "#FF9900" },
-    { name: "Docker / Kubernetes", icon: "Container", color: "#2496ED" },
-    { name: "HTML5 & CSS3", icon: "FileCode2", color: "#E34F26" },
-    { name: "Tailwind CSS", icon: "TailwindCss", color: "#000000" },
+    { name: "JavaScript", icon: "JavaScript", color: "#f0db4f" },
+    { name: "TypeScript", icon: "FileJson2", color: "#007acc" },
+    { name: "React / Next.js", icon: "React", color: "#61DBFB" },
+    { name: "Node.js / Express", icon: "NodeJs", color: "#3C873A" },
+    { name: "Python / Django", icon: "Python", color: "#306998" },
+    { name: "SQL (PostgreSQL, MySQL)", icon: "PostgreSql", color: "#336791" },
+    { name: "NoSQL (MongoDB, Redis)", icon: "MongoDb", color: "#4DB33D" },
+    { name: "AWS / GCP", icon: "Aws", color: "#FF9900" },
+    { name: "Docker / Kubernetes", icon: "Docker", color: "#0db7ed" },
+    { name: "HTML5 & CSS3", icon: "Html", color: "#e34f26" },
+    { name: "Tailwind CSS", icon: "TailwindCss", color: "#38bdf8" },
     { name: "CI/CD (Jenkins, GitHub Actions)", icon: "GitBranchPlus", color: "#1A1A1A" },
 ];
 
@@ -97,3 +97,5 @@ export const EDUCATION_DATA = [
     description: "Validated cloud fluency and foundational AWS knowledge across the four key areas: cloud concepts, security and compliance, technology, and billing and pricing."
   }
 ];
+
+    
