@@ -1,7 +1,7 @@
 'use client';
 import { SKILLS_DATA } from "@/lib/data";
 import { SectionWrapper, SectionHeader } from "./section-wrapper";
-import { Progress } from "@/components/ui/progress";
+import { Card } from "@/components/ui/card";
 import * as Icons from "lucide-react";
 
 const Icon = ({ name, ...props }: { name: string } & Icons.LucideProps) => {
@@ -18,18 +18,12 @@ export function SkillsSection() {
   return (
     <SectionWrapper id="skills" className="bg-muted/50">
       <SectionHeader>Skills & Expertise</SectionHeader>
-      <div className="grid grid-cols-1 gap-x-8 gap-y-6 md:grid-cols-2">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {SKILLS_DATA.map((skill) => (
-          <div key={skill.name}>
-            <div className="mb-2 flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                 <Icon name={skill.icon} className="h-5 w-5 text-primary" />
-                <h3 className="font-semibold">{skill.name}</h3>
-              </div>
-              <span className="text-sm text-muted-foreground">{skill.level}%</span>
-            </div>
-            <Progress value={skill.level} className="h-2 [&>div]:bg-accent" />
-          </div>
+          <Card key={skill.name} className="flex transform flex-col items-center justify-center gap-4 p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <Icon name={skill.icon} className="h-10 w-10 text-primary" />
+            <h3 className="text-center font-semibold">{skill.name}</h3>
+          </Card>
         ))}
       </div>
     </SectionWrapper>
