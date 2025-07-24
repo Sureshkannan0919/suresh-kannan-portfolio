@@ -68,16 +68,6 @@ export const PROJECTS_DATA = [
 
 export const SKILLS_DATA = [
     {
-      title: "Programming Languages",
-      skills: [
-        { name: "JavaScript", color: "#f0db4f" },
-        { name: "TypeScript", color: "#007acc" },
-        { name: "Python", color: "#306998" },
-        { name: "SQL (PostgreSQL, MySQL)", color: "#336791" },
-        { name: "HTML5 & CSS3", color: "#e34f26" },
-      ],
-    },
-    {
       title: "Frameworks & Libraries",
       skills: [
         { name: "React", color: "#61DBFB" },
@@ -88,16 +78,33 @@ export const SKILLS_DATA = [
       ],
     },
     {
-      title: "Tools & Technologies",
+      title: "Programming Languages",
+      skills: [
+        { name: "JavaScript", color: "#f0db4f" },
+        { name: "TypeScript", color: "#007acc" },
+        { name: "Python", color: "#306998" },
+        { name: "SQL (PostgreSQL, MySQL)", color: "#336791" },
+        { name: "HTML5 & CSS3", color: "#e34f26" },
+      ],
+    },
+    {
+      title: "AI & Data Science",
+      skills: [
+        { name: "AI", color: "#5E4AE3" },
+        { name: "Data Science", color: "#F05032" },
+        { name: "NLP", color: "#4A90E2" },
+        { name: "Machine Learning", color: "#FF6F61" },
+        { name: "Deep Learning", color: "#6A0DAD" },
+      ],
+    },
+    {
+      title: "Tools & Platforms",
       skills: [
         { name: "NoSQL (MongoDB, Redis)", color: "#4DB33D" },
         { name: "Docker / Kubernetes", color: "#0db7ed" },
         { name: "CI/CD (GitHub Actions)", color: "#1A1A1A" },
+        { name: "AWS / GCP", color: "#FF9900" },
       ],
-    },
-    {
-      title: "Platforms",
-      skills: [{ name: "AWS / GCP", color: "#FF9900" }],
     },
 ];
 
