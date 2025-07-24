@@ -19,34 +19,26 @@ export function SkillsSection() {
             >
               <div className="animate-scroll group-hover:pause inline-block w-max">
                 {category.skills.map((skill) => (
-                  <Card 
-                    key={skill.name} 
-                    className="group/card relative mx-4 inline-flex h-24 w-24 transform flex-col justify-end overflow-hidden text-white transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-                    style={{ backgroundColor: skill.color }}
-                  >
-                    <div className="absolute inset-0 flex items-center justify-center p-4 transition-transform duration-300 group-hover/card:scale-110">
-                        {/* Icon has been removed as requested */}
-                    </div>
-                    <div className="bg-black bg-opacity-50 p-2 backdrop-blur-sm">
-                        <h3 className="text-center font-semibold">{skill.name}</h3>
-                    </div>
-                  </Card>
+                  <div key={skill.name} className="inline-flex flex-col items-center mx-4">
+                    <Card 
+                      className="group/card relative h-24 w-24 transform overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
+                      style={{ backgroundColor: skill.color }}
+                    >
+                    </Card>
+                    <h3 className="mt-2 text-sm font-semibold text-foreground">{skill.name}</h3>
+                  </div>
                 ))}
               </div>
               <div className="animate-scroll group-hover:pause inline-block w-max" aria-hidden="true">
                  {category.skills.map((skill) => (
-                  <Card 
-                    key={skill.name} 
-                    className="group/card relative mx-4 inline-flex h-24 w-24 transform flex-col justify-end overflow-hidden text-white transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
-                    style={{ backgroundColor: skill.color }}
-                  >
-                    <div className="absolute inset-0 flex items-center justify-center p-4 transition-transform duration-300 group-hover/card:scale-110">
-                        {/* Icon has been removed as requested */}
-                    </div>
-                    <div className="bg-black bg-opacity-50 p-2 backdrop-blur-sm">
-                        <h3 className="text-center font-semibold">{skill.name}</h3>
-                    </div>
-                  </Card>
+                  <div key={skill.name} className="inline-flex flex-col items-center mx-4">
+                    <Card 
+                      className="group/card relative h-24 w-24 transform overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
+                      style={{ backgroundColor: skill.color }}
+                    >
+                    </Card>
+                    <h3 className="mt-2 text-sm font-semibold text-foreground">{skill.name}</h3>
+                  </div>
                 ))}
               </div>
             </div>
