@@ -83,7 +83,7 @@ export const SKILLS_DATA = [
   {
     title: "Programming Languages",
     skills: [
-      { name: "JavaScript", imageUrl: "" },
+      { name: "JavaScript", imageUrl: "https://static.vecteezy.com/system/resources/previews/027/127/463/large_2x/javascript-logo-javascript-icon-transparent-free-png.png" },
       { name: "TypeScript", imageUrl: "" },
       { name: "Python", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjkWh_w2MlcY1Iajbcnf4ahqyiKsdfJtEpDA&s" },
       { name: "SQL", imageUrl: "" },
