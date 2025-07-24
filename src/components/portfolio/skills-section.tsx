@@ -1,3 +1,4 @@
+
 'use client';
 import { SKILLS_DATA } from "@/lib/data";
 import { SectionWrapper, SectionHeader } from "./section-wrapper";
@@ -14,7 +15,7 @@ export function SkillsSection() {
               {category.title}
             </h3>
             <div
-              className="group relative w-full overflow-hidden whitespace-nowrap"
+              className="group relative w-full overflow-x-auto whitespace-nowrap"
               style={{ maskImage: 'linear-gradient(to right, transparent 0, black 128px, black calc(100% - 128px), transparent 100%)' }}
             >
               <div className="animate-scroll group-hover:pause inline-block w-max">
