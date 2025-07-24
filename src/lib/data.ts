@@ -67,18 +67,19 @@ export const PROJECTS_DATA = [
 ];
 
 export const SKILLS_DATA = [
-    { name: "JavaScript", icon: "JavaScript", color: "#f0db4f" },
-    { name: "TypeScript", icon: "FileJson2", color: "#007acc" },
-    { name: "React / Next.js", icon: "React", color: "#61DBFB" },
-    { name: "Node.js / Express", icon: "NodeJs", color: "#3C873A" },
-    { name: "Python / Django", icon: "Python", color: "#306998" },
-    { name: "SQL (PostgreSQL, MySQL)", icon: "PostgreSql", color: "#336791" },
-    { name: "NoSQL (MongoDB, Redis)", icon: "MongoDb", color: "#4DB33D" },
-    { name: "AWS / GCP", icon: "Aws", color: "#FF9900" },
-    { name: "Docker / Kubernetes", icon: "Docker", color: "#0db7ed" },
-    { name: "HTML5 & CSS3", icon: "Html", color: "#e34f26" },
-    { name: "Tailwind CSS", icon: "TailwindCss", color: "#38bdf8" },
-    { name: "CI/CD (Jenkins, GitHub Actions)", icon: "GitBranchPlus", color: "#1A1A1A" },
+    { name: "JavaScript", color: "#f0db4f" },
+    { name: "TypeScript", color: "#007acc" },
+    { name: "React", color: "#61DBFB" },
+    { name: "Next.js", color: "#000000" },
+    { name: "Node.js / Express", color: "#3C873A" },
+    { name: "Python / Django", color: "#306998" },
+    { name: "SQL (PostgreSQL, MySQL)", color: "#336791" },
+    { name: "NoSQL (MongoDB, Redis)", color: "#4DB33D" },
+    { name: "AWS / GCP", color: "#FF9900" },
+    { name: "Docker / Kubernetes", color: "#0db7ed" },
+    { name: "HTML5 & CSS3", color: "#e34f26" },
+    { name: "Tailwind CSS", color: "#38bdf8" },
+    { name: "CI/CD (Jenkins, GitHub Actions)", color: "#1A1A1A" },
 ];
 
 export const EDUCATION_DATA = [
