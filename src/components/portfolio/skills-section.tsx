@@ -19,7 +19,7 @@ export function SkillsSection() {
               className="group relative w-full overflow-x-auto whitespace-nowrap"
               style={{ maskImage: 'linear-gradient(to right, transparent 0, black 128px, black calc(100% - 128px), transparent 100%)' }}
             >
-              <div className="animate-scroll group-hover:pause inline-block w-max">
+              <div className="animate-scroll group-hover:pause flex w-max items-center">
                 {category.skills.map((skill) => (
                   <div key={skill.name} className="inline-flex flex-col items-center mx-4">
                     <Card 
@@ -39,7 +39,7 @@ export function SkillsSection() {
                   </div>
                 ))}
               </div>
-              <div className="animate-scroll group-hover:pause inline-block w-max" aria-hidden="true">
+              <div className="animate-scroll group-hover:pause flex w-max items-center" aria-hidden="true">
                  {category.skills.map((skill) => (
                   <div key={skill.name} className="inline-flex flex-col items-center mx-4">
                     <Card 
