@@ -3,6 +3,7 @@
 import { SKILLS_DATA } from "@/lib/data";
 import { SectionWrapper, SectionHeader } from "./section-wrapper";
 import { Card } from "@/components/ui/card";
+import Image from "next/image";
 
 export function SkillsSection() {
   return (
@@ -24,7 +25,15 @@ export function SkillsSection() {
                     <Card 
                       className="group/card relative flex h-24 w-24 items-center justify-center overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
                     >
-                      {/* You can add your Image component here */}
+                      {skill.imageUrl && (
+                        <Image
+                          src={skill.imageUrl}
+                          alt={`${skill.name} logo`}
+                          width={48}
+                          height={48}
+                          className="object-contain"
+                        />
+                      )}
                     </Card>
                     <h3 className="mt-2 text-sm font-semibold text-foreground">{skill.name}</h3>
                   </div>
@@ -36,7 +45,15 @@ export function SkillsSection() {
                     <Card 
                       className="group/card relative flex h-24 w-24 items-center justify-center overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl"
                     >
-                      {/* You can add your Image component here */}
+                       {skill.imageUrl && (
+                        <Image
+                          src={skill.imageUrl}
+                          alt={`${skill.name} logo`}
+                          width={48}
+                          height={48}
+                          className="object-contain"
+                        />
+                      )}
                     </Card>
                     <h3 className="mt-2 text-sm font-semibold text-foreground">{skill.name}</h3>
                   </div>

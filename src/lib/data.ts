@@ -85,7 +85,7 @@ export const SKILLS_DATA = [
     skills: [
       { name: "JavaScript", color: "#f0db4f", imageUrl: "" },
       { name: "TypeScript", color: "#007acc", imageUrl: "" },
-      { name: "Python", color: "#306998", imageUrl: "" },
+      { name: "Python", color: "#306998", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjkWh_w2MlcY1Iajbcnf4ahqyiKsdfJtEpDA&s" },
       { name: "SQL", color: "#336791", imageUrl: "" },
       { name: "HTML5 & CSS3", color: "#e34f26", imageUrl: "" },
     ],
