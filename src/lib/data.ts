@@ -71,7 +71,7 @@ export const SKILLS_DATA = [
     { name: "TypeScript", icon: "FileJson2", color: "#3178C6" },
     { name: "React / Next.js", icon: "NextJs", color: "#000000" },
     { name: "Node.js / Express", icon: "Server", color: "#68A063" },
-    { name: "Python / Django", icon: "FileCode", color: "#3776AB" },
+    { name: "Python / Django", icon: "Python", color: "#3776AB" },
     { name: "SQL (PostgreSQL, MySQL)", icon: "Database", color: "#4479A1" },
     { name: "NoSQL (MongoDB, Redis)", icon: "DatabaseZap", color: "#47A248" },
     { name: "AWS / GCP", icon: "Cloud", color: "#FF9900" },

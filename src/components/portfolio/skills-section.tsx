@@ -49,6 +49,14 @@ const Icon = ({ name, ...props }: { name: string } & Icons.LucideProps) => {
         </svg>
       );
     }
+    if (name === 'Python') {
+        return (
+            <svg {...props} width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 12C24 12 28.5 12 28.5 16.5C28.5 21 24 21 24 21V18H31.5V6H21V15H24V12Z" fill="#3776AB"/>
+                <path d="M24 36C24 36 19.5 36 19.5 31.5C19.5 27 24 27 24 27V30H16.5V42H27V33H24V36Z" fill="#FFD43B"/>
+            </svg>
+        )
+    }
 
     if (!LucideIcon) {
         return <Icons.Code {...props} />;
