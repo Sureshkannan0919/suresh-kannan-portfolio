@@ -67,49 +67,30 @@ export const PROJECTS_DATA = [
   },
 ];
 
-export const SKILLS_DATA = [
-    {
-        title: 'Technologies',
-        skills: [
-            { name: 'AI', imageUrl: '' },
-            { name: 'Data Science', imageUrl: '' },
-            { name: 'NLP', imageUrl: '' },
-            { name: 'Machine Learning', imageUrl: '' },
-            { name: 'Deep Learning', imageUrl: '' },
-            { name: 'Data Visualization', imageUrl: '' },
-            { name: 'Backend Development', imageUrl: '' },
-        ],
-    },
-    {
-        title: 'Programming Languages',
-        skills: [
-            { name: 'JavaScript', imageUrl: 'https://static.vecteezy.com/system/resources/previews/027/127/463/large_2x/javascript-logo-javascript-icon-transparent-free-png.png' },
-            { name: 'TypeScript', imageUrl: '' },
-            { name: 'Python', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjkWh_w2MlcY1Iajbcnf4ahqyiKsdfJtEpDA&s' },
-            { name: 'SQL', imageUrl: '' },
-            { name: 'HTML5 & CSS3', imageUrl: '' },
-        ],
-    },
-    {
-        title: 'Frameworks & Libraries',
-        skills: [
-            { name: 'React', imageUrl: '' },
-            { name: 'Next.js', imageUrl: '' },
-            { name: 'Node.js / Express', imageUrl: '' },
-            { name: 'Tailwind CSS', imageUrl: '' },
-            { name: 'Django', imageUrl: '' },
-        ],
-    },
-    {
-        title: 'Tools & Platforms',
-        skills: [
-            { name: 'MongoDB', imageUrl: '' },
-            { name: 'Docker / Kubernetes', imageUrl: '' },
-            { name: 'CI/CD (GitHub Actions)', imageUrl: '' },
-            { name: 'AWS / GCP', imageUrl: '' },
-        ],
-    },
-];
+export const SKILLS_DATA = {
+    impressive: [
+        { name: 'AI', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1s-i-p17_f_U5-WpA7s-y-A-L-p_8-J-9QQ&s' },
+        { name: 'Data Science', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_xg63fS3f-x-pW-j-s-Y-Q-b-t-e-8-I-5Q&s' },
+        { name: 'Machine Learning', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgV1i-3-b-3-E-Z-0-j-5-Y-A-b-4-j-J-5Q&s' },
+        { name: 'Deep Learning', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_f-s-L-p-A-T-J_E-c-N-s-k-T-J-E-C-A&s' },
+        { name: 'Docker / Kubernetes', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_x_B-Q-b-4-J-A-T-c-N-K-S-J-E-C-A-Y&s' },
+        { name: 'AWS / GCP', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_f-s-L-p-A-T-J_E-c-N-s-k-T-J-E-C-A&s' },
+        { name: 'CI/CD (GitHub Actions)', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_x_B-Q-b-4-J-A-T-c-N-K-S-J-E-C-A-Y&s' },
+        { name: 'Next.js', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_f-s-L-p-A-T-J_E-c-N-s-k-T-J-E-C-A&s' },
+    ],
+    normal: [
+        { name: 'JavaScript', imageUrl: 'https://static.vecteezy.com/system/resources/previews/027/127/463/large_2x/javascript-logo-javascript-icon-transparent-free-png.png' },
+        { name: 'TypeScript', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjkWh_w2MlcY1Iajbcnf4ahqyiKsdfJtEpDA&s' },
+        { name: 'Python', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjkWh_w2MlcY1Iajbcnf4ahqyiKsdfJtEpDA&s' },
+        { name: 'SQL', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_f-s-L-p-A-T-J_E-c-N-s-k-T-J-E-C-A&s' },
+        { name: 'HTML5 & CSS3', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_f-s-L-p-A-T-J_E-c-N-s-k-T-J-E-C-A&s' },
+        { name: 'React', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_x_B-Q-b-4-J-A-T-c-N-K-S-J-E-C-A-Y&s' },
+        { name: 'Node.js / Express', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_f-s-L-p-A-T-J_E-c-N-s-k-T-J-E-C-A&s' },
+        { name: 'Tailwind CSS', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_x_B-Q-b-4-J-A-T-c-N-K-S-J-E-C-A-Y&s' },
+        { name: 'Django', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_f-s-L-p-A-T-J_E-c-N-s-k-T-J-E-C-A&s' },
+        { name: 'MongoDB', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_x_B-Q-b-4-J-A-T-c-N-K-S-J-E-C-A-Y&s' },
+    ]
+};
 
 export const EDUCATION_DATA = [
   {
