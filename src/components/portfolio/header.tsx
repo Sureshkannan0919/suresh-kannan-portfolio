@@ -1,6 +1,6 @@
 import { PORTFOLIO_DATA } from "@/lib/data";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
 
@@ -36,7 +36,10 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
-              <div className="flex flex-col pt-6">
+              <SheetHeader className="mb-4">
+                <SheetTitle className="text-left font-headline text-2xl">Menu</SheetTitle>
+              </SheetHeader>
+              <div className="flex flex-col">
                 <nav className="flex flex-col gap-4">
                   {sections.map((section) => (
                     <a
