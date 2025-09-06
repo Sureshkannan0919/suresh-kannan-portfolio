@@ -8,7 +8,7 @@ import { Download, Mail } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export function AboutSection() {
-  const roles = ["Agentic Ai developer", "Ai engineer", "Data scientist"];
+  const { roles } = PORTFOLIO_DATA;
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
 
   useEffect(() => {

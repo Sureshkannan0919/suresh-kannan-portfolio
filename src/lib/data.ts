@@ -8,7 +8,8 @@ export const PORTFOLIO_DATA = {
     github: "https://github.com/alexdoe",
     twitter: "https://twitter.com/alexdoe",
   },
-  bio: "A passionate Senior Software Engineer with over 8 years of experience in building scalable web applications and leading high-performing teams. I thrive on solving complex problems and creating elegant, efficient solutions. My expertise lies in full-stack development with a focus on modern JavaScript frameworks and cloud infrastructure."
+  bio: "A passionate Senior Software Engineer with over 8 years of experience in building scalable web applications and leading high-performing teams. I thrive on solving complex problems and creating elegant, efficient solutions. My expertise lies in full-stack development with a focus on modern JavaScript frameworks and cloud infrastructure.",
+  roles: ["Agentic Ai developer", "Ai engineer", "Data scientist"],
 };
 
 export const EXPERIENCE_DATA = [
