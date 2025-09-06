@@ -14,9 +14,9 @@ function SkillCategory({ title, skills, variant }: { title: string, skills: stri
       <h3 className="mb-8 text-center font-headline text-2xl font-semibold tracking-tight">
         {title}
       </h3>
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap justify-center gap-2">
         {skills.map((skill) => (
-          <Badge key={skill} variant={variant} className="px-4 py-2 text-lg bg-transparent">
+          <Badge key={skill} variant={variant} className="px-3 py-1 text-sm bg-transparent">
             {skill}
           </Badge>
         ))}
