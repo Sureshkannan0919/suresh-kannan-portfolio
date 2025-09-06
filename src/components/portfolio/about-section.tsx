@@ -1,10 +1,24 @@
+'use client';
+
 import Image from "next/image";
 import { PORTFOLIO_DATA } from "@/lib/data";
 import { SectionWrapper } from "./section-wrapper";
 import { Button } from "../ui/button";
 import { Download, Mail } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export function AboutSection() {
+  const roles = ["Agentic Ai developer", "Ai engineer", "Data scientist"];
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
+    }, 2000); // Change role every 2 seconds
+
+    return () => clearInterval(interval);
+  }, [roles.length]);
+
   return (
     <SectionWrapper id="about">
       <div className="flex flex-col items-center gap-12 md:flex-row md:gap-16">
@@ -27,8 +41,8 @@ export function AboutSection() {
           <h1 className="mt-2 font-headline text-4xl font-bold tracking-tight sm:text-5xl">
             {PORTFOLIO_DATA.name}
           </h1>
-          <p className="mt-2 font-headline text-2xl font-medium text-primary">
-            {PORTFOLIO_DATA.title}
+          <p className="mt-2 font-headline text-2xl font-medium text-primary h-8">
+            {roles[currentRoleIndex]}
           </p>
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
             {PORTFOLIO_DATA.bio}
