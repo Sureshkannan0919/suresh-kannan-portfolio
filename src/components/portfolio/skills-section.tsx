@@ -3,8 +3,9 @@
 import { SKILLS_DATA } from "@/lib/data";
 import { SectionWrapper, SectionHeader } from "./section-wrapper";
 import { Badge } from "@/components/ui/badge";
+import type { badgeVariants } from "@/components/ui/badge";
 
-function SkillCategory({ title, skills }: { title: string, skills: string[] }) {
+function SkillCategory({ title, skills, variant }: { title: string, skills: string[], variant: "default" | "secondary" }) {
   return (
     <div>
       <h3 className="mb-8 text-center font-headline text-2xl font-semibold tracking-tight">
@@ -12,7 +13,7 @@ function SkillCategory({ title, skills }: { title: string, skills: string[] }) {
       </h3>
       <div className="flex flex-wrap justify-center gap-4">
         {skills.map((skill) => (
-          <Badge key={skill} variant="outline" className="px-4 py-2 text-lg">
+          <Badge key={skill} variant={variant} className="px-4 py-2 text-lg">
             {skill}
           </Badge>
         ))}
@@ -26,8 +27,8 @@ export function SkillsSection() {
     <SectionWrapper id="skills" className="bg-muted/50">
       <SectionHeader>Skills & Expertise</SectionHeader>
       <div className="flex flex-col gap-12">
-        <SkillCategory title="Impressive" skills={SKILLS_DATA.impressive} />
-        <SkillCategory title="Normal" skills={SKILLS_DATA.normal} />
+        <SkillCategory title="Impressive" skills={SKILLS_DATA.impressive} variant="default" />
+        <SkillCategory title="Normal" skills={SKILLS_DATA.normal} variant="secondary" />
       </div>
     </SectionWrapper>
   );
