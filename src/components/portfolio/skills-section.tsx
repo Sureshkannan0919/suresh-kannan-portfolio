@@ -26,7 +26,7 @@ function SkillCategory({ title, skills, variant }: { title: string, skills: stri
 }
 
 export function SkillsSection() {
-  const variants: BadgeVariant[] = ["outline-primary", "outline-destructive", "outline-secondary", "outline-accent" ];
+  const variants: BadgeVariant[] = ["outline-primary", "outline-secondary", "outline-destructive", "outline-accent" ];
   const categories = [
     { title: "AI & Data Science", skills: SKILLS_DATA.aiAndDataScience },
     { title: "Programming Languages", skills: SKILLS_DATA.programmingLanguages },
