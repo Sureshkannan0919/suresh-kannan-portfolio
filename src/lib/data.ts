@@ -68,47 +68,47 @@ export const PROJECTS_DATA = [
 ];
 
 export const SKILLS_DATA = [
-  {
-    title: "Technologies",
-    skills: [
-      { name: "AI", imageUrl: "" },
-      { name: "Data Science", imageUrl: "" },
-      { name: "NLP", imageUrl: "" },
-      { name: "Machine Learning", imageUrl: "" },
-      { name: "Deep Learning", imageUrl: "" },
-      { name: "Data Visualization", imageUrl: "" },
-      { name: "Backend Development", imageUrl: "" },
-    ],
-  },
-  {
-    title: "Programming Languages",
-    skills: [
-      { name: "JavaScript", imageUrl: "https://static.vecteezy.com/system/resources/previews/027/127/463/large_2x/javascript-logo-javascript-icon-transparent-free-png.png" },
-      { name: "TypeScript", imageUrl: "" },
-      { name: "Python", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjkWh_w2MlcY1Iajbcnf4ahqyiKsdfJtEpDA&s" },
-      { name: "SQL", imageUrl: "" },
-      { name: "HTML5 & CSS3", imageUrl: "" },
-    ],
-  },
-  {
-    title: "Frameworks & Libraries",
-    skills: [
-      { name: "React", imageUrl: "" },
-      { name: "Next.js", imageUrl: "" },
-      { name: "Node.js / Express", imageUrl: "" },
-      { name: "Tailwind CSS", imageUrl: "" },
-      { name: "Django", imageUrl: "" },
-    ],
-  },
-  {
-    title: "Tools & Platforms",
-    skills: [
-      { name: "MongoDB", imageUrl: "" },
-      { name: "Docker / Kubernetes", imageUrl: "" },
-      { name: "CI/CD (GitHub Actions)", imageUrl: "" },
-      { name: "AWS / GCP", imageUrl: "" },
-    ],
-  },
+    {
+        title: 'Technologies',
+        skills: [
+            { name: 'AI', imageUrl: '' },
+            { name: 'Data Science', imageUrl: '' },
+            { name: 'NLP', imageUrl: '' },
+            { name: 'Machine Learning', imageUrl: '' },
+            { name: 'Deep Learning', imageUrl: '' },
+            { name: 'Data Visualization', imageUrl: '' },
+            { name: 'Backend Development', imageUrl: '' },
+        ],
+    },
+    {
+        title: 'Programming Languages',
+        skills: [
+            { name: 'JavaScript', imageUrl: 'https://static.vecteezy.com/system/resources/previews/027/127/463/large_2x/javascript-logo-javascript-icon-transparent-free-png.png' },
+            { name: 'TypeScript', imageUrl: '' },
+            { name: 'Python', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjkWh_w2MlcY1Iajbcnf4ahqyiKsdfJtEpDA&s' },
+            { name: 'SQL', imageUrl: '' },
+            { name: 'HTML5 & CSS3', imageUrl: '' },
+        ],
+    },
+    {
+        title: 'Frameworks & Libraries',
+        skills: [
+            { name: 'React', imageUrl: '' },
+            { name: 'Next.js', imageUrl: '' },
+            { name: 'Node.js / Express', imageUrl: '' },
+            { name: 'Tailwind CSS', imageUrl: '' },
+            { name: 'Django', imageUrl: '' },
+        ],
+    },
+    {
+        title: 'Tools & Platforms',
+        skills: [
+            { name: 'MongoDB', imageUrl: '' },
+            { name: 'Docker / Kubernetes', imageUrl: '' },
+            { name: 'CI/CD (GitHub Actions)', imageUrl: '' },
+            { name: 'AWS / GCP', imageUrl: '' },
+        ],
+    },
 ];
 
 export const EDUCATION_DATA = [
