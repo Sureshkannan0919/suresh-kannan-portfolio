@@ -1,34 +1,13 @@
 'use client';
 
 import Image from "next/image";
-import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { getExperienceSummary } from "@/app/actions";
-import { WandSparkles, RotateCcw, Loader2 } from "lucide-react";
 import type { EXPERIENCE_DATA } from "@/lib/data";
 import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card";
 
 type Experience = (typeof EXPERIENCE_DATA)[number];
 
 export function ExperienceCard({ experience }: { experience: Experience }) {
-  const [summary, setSummary] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
-  const [isSummarized, setIsSummarized] = useState(false);
-
-  const handleSummarize = async () => {
-    setIsLoading(true);
-    const result = await getExperienceSummary(experience.description);
-    setSummary(result);
-    setIsLoading(false);
-    setIsSummarized(true);
-  };
-
-  const handleReset = () => {
-    setSummary(null);
-    setIsSummarized(false);
-  };
-
   return (
     <Card className="flex flex-col">
       <CardHeader>
@@ -52,7 +31,7 @@ export function ExperienceCard({ experience }: { experience: Experience }) {
       </CardHeader>
       <CardContent className="flex-grow">
         <p className="text-muted-foreground">
-          {isSummarized && summary ? summary : experience.description}
+          {experience.description}
         </p>
       </CardContent>
       <CardFooter className="flex flex-col items-start gap-4">
@@ -60,23 +39,6 @@ export function ExperienceCard({ experience }: { experience: Experience }) {
           {experience.tags.map(tag => (
             <Badge key={tag} variant="secondary">{tag}</Badge>
           ))}
-        </div>
-        <div>
-          {!isSummarized ? (
-            <Button variant="outline" size="sm" onClick={handleSummarize} disabled={isLoading}>
-              {isLoading ? (
-                <Loader2 className="animate-spin" />
-              ) : (
-                <WandSparkles />
-              )}
-              Summarize with AI
-            </Button>
-          ) : (
-            <Button variant="outline" size="sm" onClick={handleReset}>
-              <RotateCcw />
-              Show Full Text
-            </Button>
-          )}
         </div>
       </CardFooter>
     </Card>
