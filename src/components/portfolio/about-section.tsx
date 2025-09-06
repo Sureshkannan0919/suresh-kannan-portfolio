@@ -25,7 +25,7 @@ export function AboutSection() {
         <div className="relative h-48 w-48 flex-shrink-0 md:h-64 md:w-64">
           <div className="absolute inset-0 animate-pulse-slow rounded-full bg-primary/10" />
           <Image
-            src="https://placehold.co/400x400.png"
+            src={PORTFOLIO_DATA.profilePictureUrl}
             alt={PORTFOLIO_DATA.name}
             data-ai-hint="professional headshot"
             width={400}

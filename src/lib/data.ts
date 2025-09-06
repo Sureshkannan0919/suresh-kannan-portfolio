@@ -1,8 +1,9 @@
 
 export const PORTFOLIO_DATA = {
   name: "Suresh Kannan",
-  title: "Senior Software Engineer",
-  email: "alex.doe@email.com",
+  title: "Software Engineer",
+  email: "sureshdharma0916@gmail.com",
+  profilePictureUrl: "https://placehold.co/400x400.png",
   socials: {
     linkedin: "https://linkedin.com/in/alexdoe",
     github: "https://github.com/alexdoe",
