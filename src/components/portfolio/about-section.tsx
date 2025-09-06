@@ -27,6 +27,9 @@ export function AboutSection() {
           <h1 className="mt-2 font-headline text-4xl font-bold tracking-tight sm:text-5xl">
             {PORTFOLIO_DATA.name}
           </h1>
+          <p className="mt-2 font-headline text-2xl font-medium text-primary">
+            {PORTFOLIO_DATA.title}
+          </p>
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
             {PORTFOLIO_DATA.bio}
           </p>
