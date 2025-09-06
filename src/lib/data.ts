@@ -3,7 +3,7 @@ export const PORTFOLIO_DATA = {
   name: "Suresh Kannan",
   title: "Software Engineer",
   email: "sureshdharma0916@gmail.com",
-  profilePictureUrl: "https://placehold.co/400x400.png",
+  profilePictureUrl: "https://placehold.co/400x500.png",
   socials: {
     linkedin: "https://linkedin.com/in/alexdoe",
     github: "https://github.com/alexdoe",
