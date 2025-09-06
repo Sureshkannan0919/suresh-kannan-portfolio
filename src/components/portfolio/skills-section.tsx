@@ -4,7 +4,9 @@ import { SKILLS_DATA } from "@/lib/data";
 import { SectionWrapper, SectionHeader } from "./section-wrapper";
 import { Badge } from "@/components/ui/badge";
 
-function SkillCategory({ title, skills, variant }: { title: string, skills: string[], variant: "default" | "secondary" }) {
+type BadgeVariant = "default" | "secondary" | "destructive" | "outline";
+
+function SkillCategory({ title, skills, variant }: { title: string, skills: string[], variant: BadgeVariant }) {
   return (
     <div>
       <h3 className="mb-8 text-center font-headline text-2xl font-semibold tracking-tight">
@@ -22,14 +24,26 @@ function SkillCategory({ title, skills, variant }: { title: string, skills: stri
 }
 
 export function SkillsSection() {
+  const variants: BadgeVariant[] = ["default", "secondary", "destructive", "outline" ];
+  const categories = [
+    { title: "AI & Data Science", skills: SKILLS_DATA.aiAndDataScience },
+    { title: "Programming Languages", skills: SKILLS_DATA.programmingLanguages },
+    { title: "Frameworks", skills: SKILLS_DATA.frameworks },
+    { title: "Tools & Databases", skills: SKILLS_DATA.toolsAndDatabases },
+  ];
+
   return (
     <SectionWrapper id="skills" className="bg-muted/50">
       <SectionHeader>Skills & Expertise</SectionHeader>
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-        <SkillCategory title="AI & Data Science" skills={SKILLS_DATA.aiAndDataScience} variant="default" />
-        <SkillCategory title="Programming Languages" skills={SKILLS_DATA.programmingLanguages} variant="secondary" />
-        <SkillCategory title="Frameworks" skills={SKILLS_DATA.frameworks} variant="default" />
-        <SkillCategory title="Tools & Databases" skills={SKILLS_DATA.toolsAndDatabases} variant="secondary" />
+        {categories.map((category, index) => (
+            <SkillCategory 
+                key={category.title}
+                title={category.title} 
+                skills={category.skills} 
+                variant={variants[index % variants.length]}
+            />
+        ))}
       </div>
     </SectionWrapper>
   );
