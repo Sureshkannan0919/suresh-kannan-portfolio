@@ -3,7 +3,6 @@
 import { SKILLS_DATA } from "@/lib/data";
 import { SectionWrapper, SectionHeader } from "./section-wrapper";
 import { Badge } from "@/components/ui/badge";
-import type { badgeVariants } from "@/components/ui/badge";
 
 function SkillCategory({ title, skills, variant }: { title: string, skills: string[], variant: "default" | "secondary" }) {
   return (
@@ -26,9 +25,11 @@ export function SkillsSection() {
   return (
     <SectionWrapper id="skills" className="bg-muted/50">
       <SectionHeader>Skills & Expertise</SectionHeader>
-      <div className="flex flex-col gap-12">
-        <SkillCategory title="Impressive" skills={SKILLS_DATA.impressive} variant="default" />
-        <SkillCategory title="Normal" skills={SKILLS_DATA.normal} variant="secondary" />
+      <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+        <SkillCategory title="AI & Data Science" skills={SKILLS_DATA.aiAndDataScience} variant="default" />
+        <SkillCategory title="Programming Languages" skills={SKILLS_DATA.programmingLanguages} variant="secondary" />
+        <SkillCategory title="Frameworks" skills={SKILLS_DATA.frameworks} variant="default" />
+        <SkillCategory title="Tools & Databases" skills={SKILLS_DATA.toolsAndDatabases} variant="secondary" />
       </div>
     </SectionWrapper>
   );

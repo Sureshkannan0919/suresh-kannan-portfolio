@@ -68,28 +68,32 @@ export const PROJECTS_DATA = [
 ];
 
 export const SKILLS_DATA = {
-    impressive: [
-        'AI',
-        'Data Science',
-        'Machine Learning',
-        'Deep Learning',
-        'Docker / Kubernetes',
-        'AWS / GCP',
-        'CI/CD (GitHub Actions)',
-        'Next.js',
-    ],
-    normal: [
-        'JavaScript',
-        'TypeScript',
-        'Python',
-        'SQL',
-        'HTML5 & CSS3',
-        'React',
-        'Node.js / Express',
-        'Tailwind CSS',
-        'Django',
-        'MongoDB',
-    ]
+  aiAndDataScience: [
+    'AI',
+    'Data Science',
+    'Machine Learning',
+    'Deep Learning',
+  ],
+  programmingLanguages: [
+    'JavaScript',
+    'TypeScript',
+    'Python',
+    'SQL',
+    'HTML5 & CSS3',
+  ],
+  frameworks: [
+    'Next.js',
+    'React',
+    'Node.js / Express',
+    'Tailwind CSS',
+    'Django',
+  ],
+  toolsAndDatabases: [
+    'Docker / Kubernetes',
+    'AWS / GCP',
+    'CI/CD (GitHub Actions)',
+    'MongoDB',
+  ]
 };
 
 export const EDUCATION_DATA = [
