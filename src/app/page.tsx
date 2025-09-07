@@ -10,7 +10,7 @@ export default function Home() {
         <InfiniteScroller />
       </main>
       <footer className="py-8 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} ProfolioFlow. All Rights Reserved.
+        © {new Date().getFullYear()} Profolio. All Rights Reserved.
       </footer>
     </div>
   );

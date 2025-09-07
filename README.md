@@ -1,5 +1,10 @@
-# Firebase Studio
+#suresh-kannan-personal-portfolio
+This is my personal portfolio website. It is built using HTML, CSS, and JavaScript. It is hosted on GitHub Pages.
 
-This is a NextJS starter in Firebase Studio.
+## Features
 
-To get started, take a look at src/app/page.tsx.
+- Responsive design
+- Custom animations
+- Custom styles
+- Custom scripts
+## Technologies
