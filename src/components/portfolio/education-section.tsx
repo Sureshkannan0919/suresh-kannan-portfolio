@@ -13,7 +13,7 @@ export function EducationSection() {
             <CardHeader>
               <div className="flex items-start justify-between">
                 <div className="flex flex-col">
-                  <CardTitle className="font-headline text-xl">{edu.degree}</CardTitle>
+                  <CardTitle className="font-headline text-xl">{edu.degree} {edu.grade}</CardTitle>
                   <CardDescription className="mt-1">{edu.institution}</CardDescription>
                 </div>
                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">

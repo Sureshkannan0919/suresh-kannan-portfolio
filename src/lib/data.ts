@@ -1,60 +1,68 @@
+import sureshKannan from "@/assests/png/suresh_kannan.png";
+import beeZInovationLabs from "@/assests/png/beezlab.png";
+import dataAssist from "@/assests/png/dataassist.png";
+import customerSupport from "@/assests/png/customer_support_system.png";
+import shoeRecommendation from "@/assests/png/shoe_recommendation_system.png";
 
 export const PORTFOLIO_DATA = {
   name: "Suresh Kannan",
   title: "Software Engineer",
   email: "sureshdharma0916@gmail.com",
-  profilePictureUrl: "https://placehold.co/400x500.png",
+  profilePictureUrl: sureshKannan,
   socials: {
-    linkedin: "https://linkedin.com/in/alexdoe",
-    github: "https://github.com/alexdoe",
-    twitter: "https://twitter.com/alexdoe",
+    linkedin: "https://www.linkedin.com/in/suresh-kannan-77913424a/",
+    github: "https://github.com/Sureshkannan0919",
+    twitter: "#",
   },
-  bio: "A passionate Senior Software Engineer with over 8 years of experience in building scalable web applications and leading high-performing teams. I thrive on solving complex problems and creating elegant, efficient solutions. My expertise lies in full-stack development with a focus on modern JavaScript frameworks and cloud infrastructure.",
-  roles: ["Agentic Ai developer", "Ai engineer", "Data scientist"],
+  bio: "B.Tech in AI & Data Science (2025) with expertise in developing production-ready AI systems and advanced data processing solutions. Proficient in building intelligent platforms, including RAG-powered recommendation engines and multi-agent architectures using LangGraph and Google Gemini. Skilled in Python, PyTorch, FAISS, Django, and modern AI frameworks, with hands-on experience in agentic AI, autonomous agent orchestration, and end-to-end solutions integrating NLP, real-time web applications, and seamless database systems. Passionate about harnessing cutting-edge AI to solve complex challenges and deliver scalable, impactful solutions.",
+  roles: ["Agentic AI developer", "AI engineer", "Data scientist"],
 };
 
 export const EXPERIENCE_DATA = [
   {
     id: 1,
     company: "Beez Inovation Labs.",
-    logoUrl: "https://placehold.co/100x100/5C6BC0/FFFFFF.png",
+    logoUrl: beeZInovationLabs,
     dataAiHint: "technology company",
     title: "Software Trainee",
-    period: "Jan 2020 - Present",
-    description: "Led the development of a new microservices-based architecture for the company's flagship product, improving scalability by 200% and reducing latency by 40%. Mentored a team of 5 junior engineers, fostering a culture of collaboration and continuous learning. Spearheaded the adoption of Next.js and TypeScript, modernizing the front-end stack and increasing developer productivity.",
-    tags: ["NLP", "RAG", "ML", "AI", "LLM"],
+    period: "June 2024 - December 2024",
+    description:
+      "Worked as a Software Trainee in Beez Inovation Labs. I was part of the AI team and worked on various AI projects. I learned a lot about AI and how to use it to solve real-world problems.",
+    tags: ["Natural Language Processing", "RAG", "Machine Learning", "AI", "LLM"],
   },
-  
 ];
 
 export const PROJECTS_DATA = [
   {
     id: 1,
-    title: "ProfolioFlow - AI Portfolio Builder",
-    imageUrl: "https://placehold.co/600x400/5C6BC0/FFFFFF.png",
-    dataAiHint: "portfolio project",
-    description: "A dynamic portfolio application built with Next.js, featuring infinite scroll and AI-powered summarization for project and work descriptions. The platform is designed to be visually appealing and highly interactive, showcasing skills and experience in a modern, single-page format. It leverages server components for performance and Genkit for AI features.",
-    stack: ["Next.js", "Tailwind CSS", "TypeScript", "Genkit", "Vercel"],
+    title: "Multi Agent Customer Support System",
+    imageUrl: customerSupport,
+    dataAiHint: "project management",
+    description:"Sophisticated AI customer service platform with hierarchical multi-agent architecture using LangGraph. Five specialized agents work collaboratively: Product Recommender (RAG-powered), Product Comparator (web scraping), Order Support (Firebase integration), Policy Support (semantic search), and Primary Assistant (routing). Delivers human-like customer interactions with intelligent agent handoffs and real-time data processing.",
+    stack: ["Agentic AI", "Langchain", "Langgraph", "RAG", "LlamaIndex", "Fastapi", "Firebase"],
     liveUrl: "#",
     githubUrl: "#",
   },
   {
     id: 2,
-    title: "TaskMaster - Project Management Tool",
-    imageUrl: "https://placehold.co/600x400/AEEA00/000000.png",
-    dataAiHint: "project management",
-    description: "A collaborative project management tool designed to help teams organize tasks, track progress, and meet deadlines. It features a drag-and-drop Kanban board, real-time updates with WebSockets, and user authentication. The back-end is built with Express.js and the front-end with React and Redux for state management.",
-    stack: ["React", "Redux", "Node.js", "Express", "MongoDB", "WebSockets"],
+    title: "DataAssist - A Natural Language Query and Analysis tool",
+    imageUrl: dataAssist,
+    dataAiHint: "portfolio project",
+    description:
+      "Transform complex data queries into simple conversations! DataAssist is a Django web application that converts natural language into SQL/NoSQL queries using Google Gemini AI. Connect to multiple databases (MySQL, PostgreSQL, MongoDB), upload files (Excel, CSV, JSON), and get instant visualizations. Features include intelligent query generation, interactive charts, user authentication, and comprehensive query history tracking.",
+    stack: ["NLP", "DDMS", "SQL", "Djanjo", "RestAPI", "Google Gemini","pandas"],
     liveUrl: "#",
     githubUrl: "#",
   },
+  
   {
     id: 3,
-    title: "TaskMaster - Project Management Tool",
-    imageUrl: "https://placehold.co/600x400/AEEA00/000000.png",
+    title: "Advance shoe recommendation system",
+    imageUrl: shoeRecommendation,
     dataAiHint: "project management",
-    description: "A collaborative project management tool designed to help teams organize tasks, track progress, and meet deadlines. It features a drag-and-drop Kanban board, real-time updates with WebSockets, and user authentication. The back-end is built with Express.js and the front-end with React and Redux for state management.",
-    stack: ["React", "Redux", "Node.js", "Express", "MongoDB", "WebSockets"],
+    description:
+      "Revolutionary e-commerce recommendation engine powered by Retrieval-Augmented Generation! Built with 46,879+ product dataset, this system understands natural language queries like 'Nike running shoes for men size 9 under $500' and delivers semantically relevant recommendations. Features GPU-accelerated FAISS vector search, sentence transformers embeddings, and Google Gemini integration for conversational AI responses.",
+    stack: ["Python", "PyTorch", "FAISS", "Transformers", "Google Gemini", "Gradio", "CUDA"],
     liveUrl: "#",
     githubUrl: "#",
   },
@@ -62,47 +70,52 @@ export const PROJECTS_DATA = [
 
 export const SKILLS_DATA = {
   aiAndDataScience: [
-    'Agentic AI',
-    'NLP',
-    'LLM',
-    'Machine Learning',
-    'Deep Learning',
+    "Agentic AI",
+    "Natural Language Processing",
+    "LLM",
+    "Multi Agent Systems",
+    "RAG",
+    "Machine Learning",
+    "Deep Learning",
+    "Data analysis",
+    "Data visualization",
+    "Data engineering",
+    "DBMS",
   ],
-  programmingLanguages: [
-    'Python',
-    'JavaScript',
-    'TypeScript',
-    'SQL',
-  ],
+  programmingLanguages: ["Python", "JavaScript", "TypeScript", "SQL"],
   frameworks: [
-    'Next.js',
-    'React',
-    'Node.js / Express',
-    'Tailwind CSS',
-    'Django',
+    "Langgraph",
+    "Langchain",
+    "crewAI",
+    "Sentence transformer",
+    "Huggingface",
+    "Llamaindex",
+    "Pytorch",
+    "Tensorflow",
+    "pandas",
+    "Matplotlib",
   ],
   toolsAndDatabases: [
-    'Autogen',
-    'Docker',
-    'AWS / GCP',
-    'Github',
-    'MongoDB',
-  ]
+    "CUDA",
+    "Autogen",
+    "Linux",
+    "Docker",
+    "AWS / GCP",
+    "Github",
+    "PostgreSQL",
+    "MongoDB",
+  ],
 };
 
 export const EDUCATION_DATA = [
   {
     id: 1,
-    institution: "State University",
-    degree: "B.S. in Computer Science",
-    period: "2011 - 2015",
-    description: "Graduated with honors. Focused on algorithms, data structures, and software engineering principles. Active member of the coding club."
+    institution: "Prince Dr K Vasudevan college of engineering and technology Chennai",
+    degree: "BTech in Artificial Intelligence and Data Science",
+    period: "2021 - 2025",
+    grade: "8.3 CGPA",
+    description:
+      "Graduated with honors. Focused on algorithms, data structures, and software engineering principles. Active member of the coding club.",
   },
-  {
-    id: 2,
-    institution: "Certified Cloud Practitioner",
-    degree: "AWS Certification",
-    period: "2021",
-    description: "Validated cloud fluency and foundational AWS knowledge across the four key areas: cloud concepts, security and compliance, technology, and billing and pricing."
-  }
+  
 ];
