@@ -41,7 +41,7 @@ export const PROJECTS_DATA = [
     description:"Sophisticated AI customer service platform with hierarchical multi-agent architecture using LangGraph. Five specialized agents work collaboratively: Product Recommender (RAG-powered), Product Comparator (web scraping), Order Support (Firebase integration), Policy Support (semantic search), and Primary Assistant (routing). Delivers human-like customer interactions with intelligent agent handoffs and real-time data processing.",
     stack: ["Agentic AI", "Langchain", "Langgraph", "RAG", "LlamaIndex", "Fastapi", "Firebase"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Sureshkannan0919/Multi-agent-customer-support-system-Langgraph.git",
   },
   {
     id: 2,
@@ -52,7 +52,7 @@ export const PROJECTS_DATA = [
       "Transform complex data queries into simple conversations! DataAssist is a Django web application that converts natural language into SQL/NoSQL queries using Google Gemini AI. Connect to multiple databases (MySQL, PostgreSQL, MongoDB), upload files (Excel, CSV, JSON), and get instant visualizations. Features include intelligent query generation, interactive charts, user authentication, and comprehensive query history tracking.",
     stack: ["NLP", "DDMS", "SQL", "Djanjo", "RestAPI", "Google Gemini","pandas"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Sureshkannan0919/DataAssist.git",
   },
   
   {
@@ -64,7 +64,7 @@ export const PROJECTS_DATA = [
       "Revolutionary e-commerce recommendation engine powered by Retrieval-Augmented Generation! Built with 46,879+ product dataset, this system understands natural language queries like 'Nike running shoes for men size 9 under $500' and delivers semantically relevant recommendations. Features GPU-accelerated FAISS vector search, sentence transformers embeddings, and Google Gemini integration for conversational AI responses.",
     stack: ["Python", "PyTorch", "FAISS", "Transformers", "Google Gemini", "Gradio", "CUDA"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/Sureshkannan0919/Shoe_recommendation_system-RAG-.git",
   },
 ];
 
