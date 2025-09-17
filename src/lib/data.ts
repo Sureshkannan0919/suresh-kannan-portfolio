@@ -3,6 +3,7 @@ import beeZInovationLabs from "@/assests/png/beezlab.png";
 import dataAssist from "@/assests/png/dataassist.png";
 import customerSupport from "@/assests/png/customer_support_system.png";
 import shoeRecommendation from "@/assests/png/shoe_recommendation_system.png";
+import Agenticrag from "@/assests/png/AgenticRAG.png";
 
 export const PORTFOLIO_DATA = {
   name: "Suresh Kannan",
@@ -54,9 +55,18 @@ export const PROJECTS_DATA = [
     liveUrl: "#",
     githubUrl: "https://github.com/Sureshkannan0919/DataAssist.git",
   },
-  
   {
     id: 3,
+    title: "Agentic RAG - Intelligent Information Retrieval System",
+    imageUrl: Agenticrag,
+    dataAiHint: "portfolio project",
+    description:"An advanced Retrieval-Augmented Generation system that combines LangGraph orchestration with intelligent query processing. Unlike traditional RAG systems, this agentic approach evaluates document relevance, rewrites queries when needed, and combines multiple information sources for optimal results. Features include ChromaDB vector storage, web search integration via Tavily, and Google Gemini 2.0 Flash for generation. The system autonomously refines its search strategy through iterative loops until finding the most relevant information.",
+    stack: ["AgenticRAG", "Langgraph", "Langchain", "ChromaDB", "HuggingFace", "Google Gemini","Tavily"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/Sureshkannan0919/Agentic-RAG-Langgraph.git",
+  },
+  {
+    id: 4,
     title: "Advance shoe recommendation system",
     imageUrl: shoeRecommendation,
     dataAiHint: "project management",
