@@ -9,6 +9,7 @@ export const PORTFOLIO_DATA = {
   name: "Suresh Kannan",
   title: "Software Engineer",
   email: "sureshdharma0916@gmail.com",
+  resumeUrl: "/pdf/Suresh_Kannan.pdf",
   profilePictureUrl: sureshKannan,
   socials: {
     linkedin: "https://www.linkedin.com/in/suresh-kannan-77913424a/",

@@ -55,9 +55,11 @@ export function AboutSection() {
                 Contact Me
               </a>
             </Button>
-            <Button size="lg" variant="outline">
+            <Button size="lg" variant="outline" asChild>
+              <a href={PORTFOLIO_DATA.resumeUrl} target="_blank" rel="noopener noreferrer">
               <Download />
               Download CV
+              </a>
             </Button>
           </div>
         </div>
